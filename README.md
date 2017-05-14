@@ -1,5 +1,6 @@
 # rc-chrome-ext-grid
-Mimic Google Chrome extensions manager grid
+### Google Chrome extensions manager grid
+#### [DEMO](https://ravindrachaugule.github.io/rc-chrome-ext-grid/index-version-css.html)
 
 I like Google Chrome extenstions manager grid (Grid that is in related tab) and had a thought to mimic the same in simple way. There are two versions I have created. One with JS support and one with CSS only. This is responsive and customizable. 
 
