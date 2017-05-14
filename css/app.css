@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  line-height: 1.5;
+  padding-top: 50px; }
+
+ul,
+li {
+  list-style-type: none; }
+
+.wrapper {
+  max-width: 940px;
+  margin: 0px auto;
+  padding: 0px 20px 20px; }
+  .wrapper .chrome-grid {
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd; }
+    .wrapper .chrome-grid:after {
+      display: table;
+      content: '';
+      width: 100%;
+      clear: both; }
+    .wrapper .chrome-grid .chrome-grid-item {
+      width: 25%;
+      float: left;
+      height: 81px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      border-right: 1px solid #ddd; }
+      @media all and (max-width: 999px) {
+        .wrapper .chrome-grid .chrome-grid-item {
+          width: 50%; } }
+      @media all and (max-width: 480px) {
+        .wrapper .chrome-grid .chrome-grid-item {
+          width: 100%; } }
+      .wrapper .chrome-grid .chrome-grid-item .cg-inner {
+        background: #f9f9f9;
+        padding: 10px;
+        overflow: hidden;
+        box-shadow: 0px 0px 0px transparent, 1px 1px 1px #fff inset;
+        position: relative;
+        cursor: pointer;
+        width: 100%; }
+        .wrapper .chrome-grid .chrome-grid-item .cg-inner .slot-one {
+          width: 100%;
+          float: left; }
+          .wrapper .chrome-grid .chrome-grid-item .cg-inner .slot-one h5 {
+            margin-bottom: 5px; }
+          .wrapper .chrome-grid .chrome-grid-item .cg-inner .slot-one p {
+            font-size: 13px; }
+          .wrapper .chrome-grid .chrome-grid-item .cg-inner .slot-one .col-left {
+            float: left;
+            width: 70%;
+            padding: 5px; }
+            .wrapper .chrome-grid .chrome-grid-item .cg-inner .slot-one .col-left .star-rating ul li {
+              width: 12px;
+              display: inline-block; }
+              .wrapper .chrome-grid .chrome-grid-item .cg-inner .slot-one .col-left .star-rating ul li svg {
+                fill: #333; }
+              .wrapper .chrome-grid .chrome-grid-item .cg-inner .slot-one .col-left .star-rating ul li.blank svg {
+                stroke-width: 10px;
+                fill: transparent;
+                stroke: #333; }
+          .wrapper .chrome-grid .chrome-grid-item .cg-inner .slot-one .col-right {
+            float: left;
+            width: 30%;
+            padding: 5px;
+            text-align: right; }
+            .wrapper .chrome-grid .chrome-grid-item .cg-inner .slot-one .col-right img {
+              max-width: 90%;
+              max-height: 90%; }
+              @media all and (max-width: 999px) {
+                .wrapper .chrome-grid .chrome-grid-item .cg-inner .slot-one .col-right img {
+                  max-width: 45px; } }
+        .wrapper .chrome-grid .chrome-grid-item .cg-inner .slot-two {
+          font-size: 12px;
+          display: none;
+          font-weight: 600;
+          color: #555;
+          position: relative;
+          padding-bottom: 60px;
+          float: left;
+          width: 100%; }
+          .wrapper .chrome-grid .chrome-grid-item .cg-inner .slot-two p {
+            vertical-align: top; }
+          .wrapper .chrome-grid .chrome-grid-item .cg-inner .slot-two .button {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            background: #4d7bd6;
+            border: 1px solid #2d53af;
+            color: #fff;
+            font-size: 11px;
+            margin-bottom: 0; }
+            .wrapper .chrome-grid .chrome-grid-item .cg-inner .slot-two .button:hover {
+              background: #5c92ff;
+              border-color: #4076ff; }
+
+.versions {
+  text-align: center;
+  margin-bottom: 50px; }
+
+.button {
+  bottom: 10px;
+  display: inline-block;
+  padding: 7px 30px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  background: #ed8528;
+  border-radius: 4px;
+  border: 1px solid #d9761d;
+  text-decoration: none;
+  box-shadow: 0 2px 0 0 rgba(255, 255, 255, 0.06) inset, 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 200px;
+  margin: auto;
+  transition: all ease 0.1s;
+  margin-bottom: 10px; }
+  .button.css {
+    background: #2c81f4;
+    border-color: #2172e0;
+    position: relative;
+    top: 1px; }
+    .button.css:active {
+      top: 3px; }
+  .button.js {
+    position: relative;
+    top: 1px; }
+    .button.js:active {
+      top: 3px; }
+
+.wrapper.version-js .chrome-grid .chrome-grid-item .cg-inner.open {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+  z-index: 1; }
+  .wrapper.version-js .chrome-grid .chrome-grid-item .cg-inner.open .slot-two {
+    display: block; }
+
+.wrapper.version-css .chrome-grid .chrome-grid-item .cg-inner {
+  transition: all ease 0.2s;
+  height: 80px;
+  box-shadow: 0px 0px 0px transparent; }
+  .wrapper.version-css .chrome-grid .chrome-grid-item .cg-inner .slot-two {
+    transition: all ease 0.2s;
+    visibility: hidden;
+    opacity: 0;
+    display: block;
+    position: relative;
+    z-index: 999; }
+  .wrapper.version-css .chrome-grid .chrome-grid-item .cg-inner:hover {
+    height: 200px;
+    z-index: 1;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+    transition-delay: 0.3s; }
+    .wrapper.version-css .chrome-grid .chrome-grid-item .cg-inner:hover .slot-two {
+      visibility: visible;
+      opacity: 1;
+      transition-delay: 0.3s; }
+
+@keyframes preloader {
+  0% {
+    width: 0%; }
+  30% {
+    width: 15%; }
+  60% {
+    width: 25%; }
+  100% {
+    width: 100%; } }
+
+body {
+  position: relative; }
+  body:before {
+    content: '';
+    height: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0px;
+    width: 0px;
+    animation: preloader 1.5s infinite;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; }
+  body.body-js:before {
+    background: #ed8528; }
+  body.body-css:before {
+    background: #2c81f4; }
